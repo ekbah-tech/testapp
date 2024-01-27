@@ -1,0 +1,20 @@
+<MainWindow>:
+    orientation: 'vertical'
+    spacing: 100
+    canvas.before:
+        Color:
+            rgba: (1,1,1,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+            
+    Label:
+        id: label
+        text: 'Label'
+        color: (0,0,0,1)
+        bold: True
+        size_hint_y: .95
+        
+    Button:
+        text: "Press"
+        on_release: label.text = "Pressed"
